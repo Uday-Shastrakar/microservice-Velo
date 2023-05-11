@@ -1,7 +1,0 @@
-eureka:
-  instance:
-    hostname: localhost
-#  below line restrics eureka server from register itself and restric from feching with other services.  
-  client:
-    register-with-eureka: false 
-    fetch-registry: false

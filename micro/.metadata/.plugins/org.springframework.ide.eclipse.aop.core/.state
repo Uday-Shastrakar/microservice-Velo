@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<aop-reference-model>
-<aop-project name="department"/>
-<aop-project name="ServiceRegistry"/>
-<aop-project name="user"/>
-<aop-project name="employee"/>
-</aop-reference-model>

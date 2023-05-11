@@ -30,13 +30,13 @@ public class UserController {
 
 		return ResponseEntity.status(HttpStatus.CREATED).body(users);
 	}
-	 @GetMapping("/get/{userId}")
+	 @GetMapping("/{userId}")
 	 public ResponseEntity<User> getSingleUser(@PathVariable String userId ){
 		 User user = service.getUser(userId);
 		 return  ResponseEntity.ok(user);
 	 }
 	 
-	 @GetMapping("/getall")
+	 @GetMapping
 	 public ResponseEntity<List<User>> getAllUser(){
 		 List<User> allUser =  service.getAllUsers();
 		 return ResponseEntity.ok(allUser);
@@ -53,7 +53,6 @@ public class UserController {
 		   User users = service.updateUser(user);
 		   return ResponseEntity.status(HttpStatus.ACCEPTED).body(users);
 	 }
-	 
 	 
 	 
 	 

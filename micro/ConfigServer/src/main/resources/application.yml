@@ -1,0 +1,16 @@
+server:
+  port: 8086
+  
+spring:
+  application:
+    name: CONFIG-SERVER
+    
+    
+# passing url of git hub to get configuration from there
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Uday-Shastrakar/microservice-config
+          clone-on-start: true
