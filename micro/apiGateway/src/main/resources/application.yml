@@ -4,6 +4,9 @@ server:
 spring:
   application:
     name: API-GATEWAY
+  config:
+     import: configserver:http://localhost:8086
+    
  
   cloud:
     gateway:
@@ -24,12 +27,12 @@ spring:
          - Path=/department/**
        
       
-eureka:
- instance:
-    prefer-ip-address: true
- client:
-    fetch-registry: true
-    register-with-eureka: true
-    service-url:
-     defaultZone: http://localhost:8761/eureka    
+#eureka:
+# instance:
+#    prefer-ip-address: true
+# client:
+#    fetch-registry: true
+#    register-with-eureka: true
+#    service-url:
+#     defaultZone: http://localhost:8761/eureka    
     
