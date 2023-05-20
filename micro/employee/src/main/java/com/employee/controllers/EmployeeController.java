@@ -41,7 +41,7 @@ public class EmployeeController {
 		 return  ResponseEntity.ok(user);
 	 }
 	 
-	 @GetMapping("/getall")
+	 @GetMapping
 	 public ResponseEntity<List<Employee>> getAllUser(){
 		 List<Employee> allUser =  service.getAll();
 		 return ResponseEntity.ok(allUser);

@@ -17,7 +17,7 @@ public class DepartmentServiceImpl implements DepartmentService {
 	
 	@Override
 	public Department createDepartment(Department dept) {
-	 String u	=UUID.randomUUID().toString();
+	 String u =UUID.randomUUID().toString();
 	 dept.setDepartmentId(u);
 		return repo.save(dept);
 	}

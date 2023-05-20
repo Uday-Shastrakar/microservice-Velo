@@ -8,6 +8,7 @@ import org.springframework.web.client.RestTemplate;
 @Configuration
 public class MyConfig {
 	
+	
 	//use to call the hosts of the api
 //	@Bean
 //	public RestTemplate restTemplate() {
